@@ -4,7 +4,7 @@ word_list = load_file.load("dictionary.txt")
 
 anagram_list = []
 
-input_name = "forest"
+input_name = input("Enter a name: ")
 
 for word in word_list:
     if word != input_name:
