@@ -10,6 +10,8 @@ def anagram_finder(input_name):
         if word != input_name:
             if sorted(word) == sorted(input_name):
                 anagram_list.append(word)
+    
+    print(type(lambda x: x*2))
 
     if len(anagram_list) == 0:
         print("there is no anagram of the input name")
