@@ -1,7 +1,8 @@
 import requests
 
-r = requests.get("https://www.google.com/")
+r = requests.get("https://www.oneplus.com/7pro#/")
 print(r.url)
 print(r.headers)
 print(r.encoding)
-print(r.cookies)
+print('----------------')
+print(r._content)
