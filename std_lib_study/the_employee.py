@@ -23,7 +23,7 @@ class Employee:
 def main():
     james = Employee(25, 60000)
     kobe = Employee(30, 70000)
-    print(james.age)
+    print(f"james' salary is {james.salary}")
     print(kobe.salary)
     kobe.salary = 1000000
     print(kobe.salary)
