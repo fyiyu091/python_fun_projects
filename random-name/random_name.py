@@ -1,8 +1,19 @@
 import sys
 import random
+import smtplib
+import to_send_email
+from time import perf_counter
 
+def my_dec(fn):
+    def inner(*args, **kwargs):
+        start = perf_counter()
+        fn(*args, **kwargs)
+        end = perf_counter()
+        print(f"the function running time is {end-start}")
+    return inner
+
+@my_dec
 def main():
-
     first = ("lily", "lebron", "kobe", "shaq", "barkey")
     last = ("james", "onlione", "henderson", "williamson")
 

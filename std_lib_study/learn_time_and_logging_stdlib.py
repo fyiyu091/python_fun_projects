@@ -21,5 +21,6 @@ def log_message(msg, *, time=None):
         time = dt.utcnow()
     print(msg, f'the time is {time}')
 
+
 if __name__ == "__main__":
     main()
