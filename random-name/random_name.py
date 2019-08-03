@@ -1,7 +1,6 @@
 import sys
 import random
 import smtplib
-import to_send_email
 from time import perf_counter
 
 def my_dec(fn):
